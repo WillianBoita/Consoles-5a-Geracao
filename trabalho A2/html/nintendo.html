@@ -15,9 +15,9 @@
     <!-- Importando o JQuery-->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   </head>
-
+  <!-- Fonte personalizada -->
   <body class="zalando-sans-expanded-font">
-    <!-- Conteúdo do Header -->
+    <!-- Conteúdo do Header com padding e margin 2, sem margem embaixo -->
     <header class="p-2 m-2 mb-0">
         <!-- Link para página inicial -->
         <h1><a class="text-decoration-none" href="./home.html">A 6ª Geração de Consoles</a></h1>
@@ -140,6 +140,7 @@
             // mostrando capa do jogo
             gameImg.prop("hidden", false)
 
+            // src da capa
             let url = gameImg.attr("src")
             
             //alternando a capa do jogo e o peso da fonte a cada clique

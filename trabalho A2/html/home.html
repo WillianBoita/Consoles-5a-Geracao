@@ -15,19 +15,20 @@
     <!-- Importando o JQuery--> 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   </head> 
-
+  <!-- Fonte personalizada -->
   <body class="zalando-sans-expanded-font">
-    <!-- Conteúdo do Header -->
+    <!-- Conteúdo do Header com padding e margin 2, sem margem embaixo -->
     <header class="p-2 m-2 mb-0">
         <!-- Link para página inicial -->
         <h1><a class="text-decoration-none" href="./home.html">A 6ª Geração de Consoles</a></h1>
     </header>
 
-    <!-- Conteúdo principal -->
+    <!-- Conteúdo principal, com flexbox, espaçado entre os dois cantos da página -->
     <main class="d-flex justify-content-between p-2">
-      <!-- Seção principal do conteúdo -->
+      <!-- Seção principal do conteúdo, com flexbox, em colunas e arredondado -->
       <section class="d-flex flex-column section-color rounded-3 p-2 m-2 mt-0" style="max-width: 70%;">
         <h2>O que foi? O que representou?</h2>
+        <!-- Margem e padding no parágrafo -->
         <p class="m-1 p-1 ms-0 ps-0">
             A 6ª geração de consoles de videogame, também chamada de era dos 128
             bits, foi um dos períodos mais importantes da história dos games. Ela
@@ -39,39 +40,44 @@
 
         <h2>Quem foram os protagonistas da geração?</h2>
         <p>Estão entre os participantes:</p>
+        <!-- Lista organizada em colunas, sem estilo -->
         <ul class="d-flex flex-column justify-content-center list-unstyled">
             <!-- Links para os consoles -->
-            <li class="main-text m-0 p-0">Playstation: <a class="text-decoration-none" id="psColor" href="./sony.html">Playstation 2</a></li>
-            <li class="main-text m-0 p-0">Nintendo: <a class="text-decoration-none" id="nintendoColor" href="./nintendo.html">Nintendo GameCube</a></li>
-            <li class="main-text m-0 p-0">Microsoft: <a class="text-decoration-none" id="xboxColor" href="./xbox.html">Microsoft Xbox</a></li>
-            <li class="main-text m-0 p-0">Sega: <a class="text-decoration-none" id="segaColor" href="./sega.html">Sega Dreamcast</a></li>
+             <!-- Margem e padding zerados, e sublinhado nos links removido -->
+            <li class="m-0 p-0">Playstation: <a class="text-decoration-none" id="psColor" href="./sony.html">Playstation 2</a></li>
+            <li class="m-0 p-0">Nintendo: <a class="text-decoration-none" id="nintendoColor" href="./nintendo.html">Nintendo GameCube</a></li>
+            <li class="m-0 p-0">Microsoft: <a class="text-decoration-none" id="xboxColor" href="./xbox.html">Microsoft Xbox</a></li>
+            <li class="m-0 p-0">Sega: <a class="text-decoration-none" id="segaColor" href="./sega.html">Sega Dreamcast</a></li>
         </ul>
 
+        <!-- Seção do vídeo e código, centralizado-->
         <section class="d-flex align-items-center justify-content-between m-2 ms-0" style="width: 80%; height: 300px;">
-          <!-- Vídeo humorístico, com autoplay e mutado em looping -->
+          <!-- Vídeo humorístico, com autoplay e mutado em looping, preenchendo o tamanho do container -->
           <video id="video-box" class="h-100 w-75 object-fit-fill" autoplay muted loop>
             <source id="video" src="../assets/videos/followthetraincj.mp4" type="video/mp4">
           </video>
 
-          <!-- Campo em que o código secreto inserido pelo usuário aparece -->
+          <!-- Campo em que o código secreto inserido pelo usuário aparece, centralizado e com margem à esquerda -->
           <h3 class="d-flex justify-content-center align-items-end ms-5" id="secret-text"></h3>
         </section>
       </section>
 
-      <!-- Conteúdo lateral -->
+      <!-- Conteúdo lateral, borda arredendada -->
       <aside class="d-flex section-color rounded-3 p-2 m-2 mt-0">
-        <!-- Importando imagens do console -->
+        <!-- Importando imagens do console, centralizada e height 100% -->
         <figure class="d-flex justify-content-center align-items-center h-100">
+          <!-- Height auto, borda arredondada e preta, Width 100%-->
           <img class="h-auto border border-dark rounded-3 w-100" src="../assets/images/9k2giodgxbm31.webp" alt="Consoles da geração">
         </figure>
       </aside>
     </main>
 
-    <!-- Conteúdo do rodapé -->
+    <!-- Conteúdo do rodapé, ocupa toda a tela horizontalmente -->
     <footer class="w-100 p-2">
         <!-- Dados pessoais -->
         <h3>Desenvolvido por: Willian Kronhardt Boita</h3>
         <h4>Contato:</h4>
+        <!-- Lista centralizada e sem estilos -->
         <ul class="d-flex flex-column justify-content-center list-unstyled">
             <li class="d-flex">E-mail: <p class="m-0 ms-1">wkboita@gmail.com</p></li>
             <li class="d-flex">Matrícula: <p class="m-0 ms-1">20250020260</p></li>
